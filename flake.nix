@@ -23,7 +23,7 @@
 
           src = self;
 
-          buildInputs = with pkgs; [ clang ];
+          buildInputs = with pkgs; [ gcc ];
 
           buildPhase = ''
             cc -o hello hello.c

@@ -43,7 +43,7 @@
       apps = forEachSupportedSystem ({ system, ... }: {
         default = {
           type = "app";
-          program = "${self.packages.${system}.default}/hello";
+          program = "${self.packages.${system}.default}/bin/hello";
         };
       });
 

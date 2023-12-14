@@ -33,8 +33,8 @@
           # but Nix cannot detect it as a run-time dependency because the installed file
           # is compiled and compressed, which hides the store path.
           installPhase = ''
-            mkdir $out
-            cp hello $out
+            mkdir -p $out/bin
+            cp hello $out/bin
           '';
 
         };
